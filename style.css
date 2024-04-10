@@ -27,10 +27,12 @@ header {
 
 header h1 {
     margin: 0;
+    text-align: center; /* Centering the heading */
 }
 
 nav ul {
     list-style-type: none;
+    text-align: center; /* Centering the navigation */
 }
 
 nav ul li {
