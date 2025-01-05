@@ -59,9 +59,10 @@ function endSequence() {
   textElement.innerHTML = ':)';
   textElement.style.animation = 'glitch 1s infinite, colorShift 1.5s infinite';
   setTimeout(() => {
-    textElement.innerHTML = '';
-    document.body.style.background = 'black';
-  }, 3000);
+    // Keep smiley face for a few seconds before fading out everything
+    textElement.style.color = 'black'; // Change text color to black so it disappears
+    document.body.style.background = 'black'; // Set background to black
+  }, 3000); // Display smiley face for 3 seconds
 }
 
 // Start sequence when music plays
